@@ -3,28 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Home</title>
+    <title>Mein Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
-        <h1>Willkomen</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">Über mich</a>
-            <a href="projects.html">Projekte</a>
-            <a href="contact.html">Kontakt</a>
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-indigo-900 text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">Mein Portfolio</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-indigo-300 transition">Home</a>
+                    <a href="#about" class="hover:text-indigo-300 transition">Über mich</a>
+                     <a href="#projects" class="hover:text-indigo-300 transition">Projekte</a>
+                    <a href="#contact" class="hover:text-indigo-300 transition">Kontakt</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <p>Hier findest du Informationen über mich und meine Projekte</p>
-        <p>Und noch vieles mehr</p>
-    </main>
+    <section id="home" class="py-20 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-6">Willkommen auf meinem Portfolio</h1>
+            <p class="text-xl mb-8">Ich bin ein Lernender in Applikationsentwicklung und interessiere mich für Programmierung.</p>
+            <a href="#projects" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Meine Projekte</a>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Steven Raetzo</p>
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Über mich</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="images/Steven.png" alt="Profilbild" class="rounded-lg shadow-xl w-full max-w-md mx-auto" width="400" height="400">
+                    <div class="mt-4 flex justify-center space-x-4">
+                        <audio controls class="mt-4">
+                            <source src="https://api.soundbuttons.com/sounds/2025/04/1745310609-notification_o14egLP.mp3">
+                            Ihr Browser unterstützt das Audio-Element nicht.
+                        </audio>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Wer ich bin</h3>
+                    <p class="mb-4">Ich bin ein Lernender in Applikationsentwicklung und interessiere mich für Programmierung.</p>
+                    <p class="mb-4">Momentan lerne ich CSS und HTML, diese Webseite hilft mir dabei.</p>
+                    <p>In meiner Freizeit beschäftige ich mich mit Kernel in C++ oder C.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Meine Projekte</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="images/projekt.png" alt="Projekt 1" class="w-full h-48 object-cover" width="400" height="200">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Projekt 1</h3>
+                        <p class="text-gray-600 mb-4">Erklärung.</p>
+                        <a href="https://github.com/SwaggerboyYT/projekt1" target="_blank" class="text-indigo-600 hover:text-indigo-800">Zum Projekt</a>
+                    </div>
+                </div>
+                
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="images/projekt.png" alt="Projekt 2" class="w-full h-48 object-cover" width="400" height="200">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Projekt 2</h3>
+                        <p class="text-gray-600 mb-4">Erklärung.</p>
+                        <a href="https://github.com/SwaggerboyYT/projekt2" target="_blank" class="text-indigo-600 hover:text-indigo-800">Zum Projekt</a>
+                    </div>
+                </div>
+                
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="images/projekt.png" alt="Projekt 3" class="w-full h-48 object-cover" width="400" height="200">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Projekt 3</h3>
+                        <p class="text-gray-600 mb-4">Erklärung.</p>
+                        <a href="https://github.com/SwaggerboyYT/projekt3" target="_blank" class="text-indigo-600 hover:text-indigo-800">Zum Projekt</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Mein Arbeitsprozess</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe class="w-full h-96" src="https://www.youtube.com/embed/I84aQhbJl_Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+->
+    <section id="contact" class="py-16 bg-indigo-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Kontakt</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-xl font-semibold mb-4">Kontaktinformationen</h3>
+                    <p class="mb-4"><strong>Email:</strong> <a href="mailto:stevenraetzo@bbbzbl.it.ch" class="text-indigo-600 hover:text-indigo-800">stevenraetzo@bbbzbl.it.ch</a></p>
+                    <p class="mb-4"><strong>Telefon:</strong> <a href="tel:+" class="41791344332text-indigo-600 hover:text-indigo-800">+41 12 345 67 89</a></p>
+                    <p class="mb-4"><strong>Adresse:</strong> Reigoldswil</p>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Finde mich auf</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">GitHub</a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">LinkedIn</a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">Twitter</a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Mein Standort</h3>
+                        <div class="aspect-w-16 aspect-h-9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21607.60382516006!2d7.667043735110403!3d47.39339910714102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791cc25153b5e41%3A0x2b1637466838778f!2s4418%20Reigoldswil!5e0!3m2!1sde!2sch!4v1749789838256!5m2!1sde!2sch" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <form action="https://gibm.becknet.ch/formular/formular.php" method="POST" class="bg-white p-8 rounded-lg shadow-lg">
+                        <fieldset>
+                            <legend class="text-xl font-semibold mb-4">Kontaktformular</legend>
+                            
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">Name*</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Email*</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 mb-2">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="079 294 43" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="subject" class="block text-gray-700 mb-2">Betreff</label>
+                                <select id="subject" name="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option value="" disabled selected>Bitte auswählen</option>
+                                    <option value="job">Jobangebot</option>
+                                    <option value="project">Projektanfrage</option>
+                                    <option value="question">Frage</option>
+                                    <option value="other">Anderes</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Priorität</label>
+                                <div class="flex space-x-4">
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" name="priority" value="low" class="text-indigo-600">
+                                        <span class="ml-2">Niedrig</span>
+                                    </label>
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" name="priority" value="medium" checked class="text-indigo-600">
+                                        <span class="ml-2">Mittel</span>
+                                    </label>
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" name="priority" value="high" class="text-indigo-600">
+                                        <span class="ml-2">Hoch</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 mb-2">Nachricht*</label>
+                                <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="newsletter" class="inline-flex items-center">
+                                    <input type="checkbox" id="newsletter" name="newsletter" class="text-indigo-600">
+                                    <span class="ml-2">Ich möchte den Newsletter abonnieren</span>
+                                </label>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="date" class="block text-gray-700 mb-2">Bevorzugter Kontakttag</label>
+                                <input type="date" id="date" name="date" min="2023-01-01" max="2023-12-31" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="url" class="block text-gray-700 mb-2">Website (optional)</label>
+                                <input type="url" id="url" name="url" placeholder="https://example.com" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="budget" class="block text-gray-700 mb-2">Budget (in CHF)</label>
+                                <input type="number" id="budget" name="budget" min="0" max="100000" step="1000" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <button type="reset" class="px-6 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400 transition">Zurücksetzen</button>
+                                <button type="submit" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Absenden</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2025 Steven Raetzo. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-indigo-300 transition">Impressum</a>
+                    <a href="#" class="hover:text-indigo-300 transition">Datenschutz</a>
+                    <a href="#" class="hover:text-indigo-300 transition">AGB</a>
+                </div>
+            </div>
+        </div>
     </footer>
-    
 </body>
 </html>
