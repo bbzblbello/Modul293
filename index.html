@@ -11,7 +11,8 @@
 
     <link rel="preload" href="css/style.css" as="style">
     <link rel="preload" href="css/tailwind.min.css" as="style">
-    <link rel="preload" href="images/Steven.png" as="image">
+    <link rel="preload" href="images/Steven.webp" as="image" type="image/webp">
+
 </head>
 <body class="bg-gray-100 font-sans">
 
@@ -47,7 +48,10 @@
             <h2 class="text-3xl font-bold text-center mb-12">Über mich</h2>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                    <img src="images/Steven.png" alt="Profilbild" class="rounded-lg shadow-xl w-full max-w-md mx-auto" width="400" height="400">
+                    <picture>
+                        <source srcset="images/Steven.webp" type="image/webp">
+                        <img src="images/Steven.png" alt="Profilbild" class="rounded-lg shadow-xl w-full max-w-md mx-auto" width="400" height="400" decoding="async">
+                    </picture>
                     <div class="mt-4 flex justify-center space-x-4">
                         <audio controls class="mt-4">
                             <source src="https://api.soundbuttons.com/sounds/2025/04/1745310609-notification_o14egLP.mp3">
@@ -71,7 +75,10 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                    <img src="images/projekt.png" alt="Projekt 1" class="w-full h-48 object-cover" width="400" height="200">
+                    <picture>
+                        <source srcset="images/projekt.webp" type="image/webp">
+                        <img src="images/projekt.png" alt="Projekt 1" class="w-full h-48 object-cover" width="400" height="200" decoding="async">
+                    </picture>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Projekt 1</h3>
                         <p class="text-gray-600 mb-4">Erklärung.</p>
@@ -81,7 +88,10 @@
                 
 
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                    <img src="images/projekt.png" alt="Projekt 2" class="w-full h-48 object-cover" width="400" height="200">
+                     <picture>
+                        <source srcset="images/projekt.webp" type="image/webp">
+                        <img src="images/projekt.png" alt="Projekt 2" class="w-full h-48 object-cover" width="400" height="200" decoding="async">
+                    </picture>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Projekt 2</h3>
                         <p class="text-gray-600 mb-4">Erklärung.</p>
@@ -91,7 +101,10 @@
                 
 
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                    <img src="images/projekt.png" alt="Projekt 3" class="w-full h-48 object-cover" width="400" height="200">
+                     <picture>
+                        <source srcset="images/projekt.webp" type="image/webp">
+                        <img src="images/projekt.png" alt="Projekt 3" class="w-full h-48 object-cover" width="400" height="200" decoding="async">
+                    </picture>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Projekt 3</h3>
                         <p class="text-gray-600 mb-4">Erklärung.</p>
