@@ -9,6 +9,7 @@
 /* Nesting */
 header {
     nav {
+
         a {
             position: relative;
             
@@ -47,16 +48,35 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* Responsive */
+
+@media (max-width: 1024px) {
+    header nav {
+        a {
+            margin: 0 0.75rem;
+        }
+    }
+
+    section#projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;
-        
+        align-items: flex-start;
+
         a {
             margin: 0.5rem 0;
         }
     }
-}
 
+    section#projects {
+        grid-template-columns: 1fr;
+    }
+}
 
 form {
     label {

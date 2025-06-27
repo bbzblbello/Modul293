@@ -257,5 +257,16 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    document.querySelector('.md\\:hidden').addEventListener('click', function() {
+        const nav = document.querySelector('.hidden.md\\:flex');
+        nav.classList.toggle('hidden');
+        nav.classList.toggle('flex');
+        nav.classList.toggle('flex-col');
+        nav.classList.toggle('space-x-8');
+        nav.classList.toggle('space-y-2');
+    });
+</script>
 </body>
 </html>
